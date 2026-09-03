@@ -1,5 +1,3 @@
-"""Google Gemini AI Service Integration for CIVICAI Platform.
-
 
 import json
 import os
