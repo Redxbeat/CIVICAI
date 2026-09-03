@@ -1,8 +1,5 @@
-"""CIVICAI GenAI API RAG (Retrieval-Augmented Generation) Framework.
+CIVICAI GenAI API RAG (Retrieval-Augmented Generation) Framework.
 
-Combines municipal policy knowledge base retrieval with Google Gemini 3.6 Flash
-to deliver grounded, evidence-backed answers and policy citations for citizen requests.
-"""
 
 from __future__ import annotations
 
