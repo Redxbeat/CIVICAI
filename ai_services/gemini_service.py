@@ -1,8 +1,5 @@
-"""Google Gemini AI Service Integration for CIVICAI Platform.
+Google Gemini AI Service Integration for CIVICAI Platform.
 
-Uses Google Gemini (gemini-3.6-flash) for live multilingual translation,
-infrastructure request classification, entity extraction, and agency action plan generation.
-"""
 
 import json
 import os

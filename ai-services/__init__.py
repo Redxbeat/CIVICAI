@@ -1,8 +1,5 @@
-"""CIVICAI AI Services
+CIVICAI AI Services
 
-Multilingual text processing, infrastructure classification,
-entity extraction, and agency triage routing for citizen requests.
-"""
 
 try:
     from .language_service import detect_language, translate_to_english, language_pipeline
