@@ -4,28 +4,16 @@ from __future__ import annotations
 
 from typing import Any, Dict
 
-try:
-    from .classification_service import classify_infrastructure
-    from .extraction_service import extract_entities, normalize_and_extract
-    from .gemini_service import (
-        gemini_classify_and_score,
-        gemini_detect_and_translate,
-        gemini_extract_entities,
-        gemini_generate_action_plan,
-    )
-    from .language_service import detect_language, translate_to_english, language_pipeline
-    from .triage_service import compute_triage_score, route_to_agency
-except ImportError:
-    from classification_service import classify_infrastructure
-    from extraction_service import extract_entities, normalize_and_extract
-    from gemini_service import (
-        gemini_classify_and_score,
-        gemini_detect_and_translate,
-        gemini_extract_entities,
-        gemini_generate_action_plan,
-    )
-    from language_service import detect_language, translate_to_english, language_pipeline
-    from triage_service import compute_triage_score, route_to_agency
+from .classification_service import classify_infrastructure
+from .extraction_service import extract_entities, normalize_and_extract
+from .gemini_service import (
+    gemini_classify_and_score,
+    gemini_detect_and_translate,
+    gemini_extract_entities,
+    gemini_generate_action_plan,
+)
+from .language_service import detect_language, translate_to_english, language_pipeline
+from .triage_service import compute_triage_score, route_to_agency
 
 
 

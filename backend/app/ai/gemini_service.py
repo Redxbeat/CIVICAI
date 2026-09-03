@@ -8,7 +8,10 @@ import json
 import os
 from typing import Any, Dict, Optional
 
-import google.generativeai as genai
+try:
+    import google.generativeai as genai
+except ImportError:
+    genai = None
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 GEMINI_ENABLED = os.getenv("CIVICAI_ENABLE_GEMINI", "").lower() in {"1", "true", "yes", "on"}
@@ -23,7 +26,9 @@ def _gemini_available() -> bool:
     return bool(GEMINI_ENABLED and GEMINI_API_KEY)
 
 
-def get_gemini_model() -> genai.GenerativeModel:
+def get_gemini_model() -> Any:
+    if genai is None:
+        raise RuntimeError("Google Generative AI SDK is not installed")
     return genai.GenerativeModel(MODEL_NAME)
 
 

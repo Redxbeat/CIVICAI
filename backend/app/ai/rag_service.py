@@ -11,11 +11,15 @@ import os
 import re
 from typing import Any, Dict, List, Optional
 
-import google.generativeai as genai
+try:
+    import google.generativeai as genai
+except ImportError:
+    genai = None
 
 # Configure Gemini API
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyDyw6eV7MbzGDk4kgnSZ4qUFviT5tZ4U04")
-genai.configure(api_key=GEMINI_API_KEY)
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
+if genai is not None and GEMINI_API_KEY:
+    genai.configure(api_key=GEMINI_API_KEY)
 
 MODEL_NAME = "models/gemini-3.6-flash"
 
