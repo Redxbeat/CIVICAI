@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+.venv*
+
+# Node
+node_modules/
+.next/
+out/
+
+# Docker
+*.log
+
+# Local databases
+*.db
+
+a/.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Build
+coverage/
+.pytest_cache/

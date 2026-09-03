@@ -1,0 +1,28 @@
+{
+  "name": "civicai-frontend",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -H 127.0.0.1 -p 3080",
+    "build": "next build",
+    "start": "next start -H 127.0.0.1 -p 3080",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/leaflet": "^1.9.22",
+    "leaflet": "^1.9.4",
+    "next": "14.2.15",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.12",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.15",
+    "typescript": "5.5.4"
+  },
+  "optionalDependencies": {
+    "@next/swc-win32-x64-msvc": "14.2.15"
+  }
+}
